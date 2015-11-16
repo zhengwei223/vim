@@ -441,7 +441,7 @@ Plugin 'Javascript-OmniCompletion-with-YUI-and-j'
 "Plugin 'JavaScript-Indent'
 "Plugin 'Better-Javascript-Indentation'
 Plugin 'jslint.vim'
-Plugin "pangloss/vim-javascript"
+Plugin 'pangloss/vim-javascript'
 Plugin 'Vim-Script-Updater'
 Plugin 'ctrlp.vim'
 Plugin 'tacahiroy/ctrlp-funky'
