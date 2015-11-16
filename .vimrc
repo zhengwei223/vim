@@ -408,55 +408,58 @@ autocmd FileType python set omnifunc=pythoncomplete#Complete
 "set nocompatible               " be iMproved
 "filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
 " My Bundles here:
-"
 " original repos on github
-Bundle 'tpope/vim-fugitive'
-Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-Bundle 'Yggdroot/indentLine'
+Plugin 'tpope/vim-fugitive'
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plugin 'Yggdroot/indentLine'
 let g:indentLine_char = '┊'
-"ndle 'tpope/vim-rails.git'
-" vim-scripts repos
-Bundle 'L9'
-Bundle 'FuzzyFinder'
-" non github repos
-Bundle 'https://github.com/wincent/command-t.git'
-Bundle 'Auto-Pairs'
-Bundle 'python-imports.vim'
-Bundle 'CaptureClipboard'
-Bundle 'ctrlp-modified.vim'
-Bundle 'last_edit_marker.vim'
-Bundle 'synmark.vim'
-"Bundle 'Python-mode-klen'
-Bundle 'SQLComplete.vim'
-Bundle 'Javascript-OmniCompletion-with-YUI-and-j'
-"Bundle 'JavaScript-Indent'
-"Bundle 'Better-Javascript-Indentation'
-Bundle 'jslint.vim'
-Bundle "pangloss/vim-javascript"
-Bundle 'Vim-Script-Updater'
-Bundle 'ctrlp.vim'
-Bundle 'tacahiroy/ctrlp-funky'
-Bundle 'jsbeautify'
-Bundle 'The-NERD-Commenter'
-"django
-Bundle 'django_templates.vim'
-Bundle 'Django-Projects'
+"Plugin 'tpope/vim-rails.git'
 
-"Bundle 'FredKSchott/CoVim'
-"Bundle 'djangojump'
+" vim-scripts repos
+Plugin 'L9'
+Plugin 'FuzzyFinder'
+
+" non github repos
+Plugin 'https://github.com/wincent/command-t.git'
+Plugin 'Auto-Pairs'
+Plugin 'python-imports.vim'
+Plugin 'CaptureClipboard'
+Plugin 'ctrlp-modified.vim'
+Plugin 'last_edit_marker.vim'
+Plugin 'synmark.vim'
+"Plugin 'Python-mode-klen'
+Plugin 'SQLComplete.vim'
+Plugin 'Javascript-OmniCompletion-with-YUI-and-j'
+"Plugin 'JavaScript-Indent'
+"Plugin 'Better-Javascript-Indentation'
+Plugin 'jslint.vim'
+Plugin "pangloss/vim-javascript"
+Plugin 'Vim-Script-Updater'
+Plugin 'ctrlp.vim'
+Plugin 'tacahiroy/ctrlp-funky'
+Plugin 'jsbeautify'
+Plugin 'The-NERD-Commenter'
+
+"django
+Plugin 'django_templates.vim'
+Plugin 'Django-Projects'
+
+"Plugin 'FredKSchott/CoVim'
+"Plugin 'djangojump'
 " ...
 let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
 
+call vundle#end() 
 filetype plugin indent on     " required!
 "
 "ctrlp设置
