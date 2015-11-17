@@ -134,7 +134,7 @@ func SetTitle()
 		call setline(1, "/*************************************************************************") 
 		call append(line("."), "	> File Name: ".expand("%")) 
 		call append(line(".")+1, "	> Author: ") 
-		call append(line(".")+2, "	> Mail: ") 
+		call append(line(".")+2, "	> Description: ") 
 		call append(line(".")+3, "	> Created Time: ".strftime("%c")) 
 		call append(line(".")+4, " ************************************************************************/") 
 		call append(line(".")+5, "")
@@ -459,7 +459,15 @@ let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
 
+Plugin 'altercation/vim-colors-solarized'
+let g:solarized_termcolors=256
+
 call vundle#end() 
+"solarized配置
+syntax enable
+set background=light
+colorscheme solarized
+
 filetype plugin indent on     " required!
 "
 "ctrlp设置
